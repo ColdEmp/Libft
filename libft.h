@@ -6,7 +6,7 @@
 /*   By: cglanvil <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/05/21 13:15:45 by cglanvil          #+#    #+#             */
-/*   Updated: 2019/05/22 11:53:30 by cglanvil         ###   ########.fr       */
+/*   Updated: 2019/05/22 12:34:47 by cglanvil         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,5 +25,6 @@ int		ft_strlen(char const *s);
 char	*ft_strrev(char *s);
 void	ft_swap(int *a, int *b);
 char	*ft_strcpy(char *d, char *s);
+char	*ft_strncpy(char *d, char *s, unsigned int n);
 
 #endif
