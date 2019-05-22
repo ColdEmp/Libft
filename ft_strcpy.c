@@ -1,29 +1,27 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   libft.h                                            :+:      :+:    :+:   */
+/*   ft_strcpy.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: cglanvil <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2019/05/21 13:15:45 by cglanvil          #+#    #+#             */
-/*   Updated: 2019/05/22 11:53:30 by cglanvil         ###   ########.fr       */
+/*   Created: 2019/05/22 11:50:11 by cglanvil          #+#    #+#             */
+/*   Updated: 2019/05/22 11:53:44 by cglanvil         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef LIBFT_H
-# define LIBFT_H
-# include <unistd.h>
-# include <stdlib.h>
-# include <string.h>
+#include "libft.h"
 
-void	ft_putchar(char c);
-void	ft_putstr(char const *s);
-void	ft_putnbr(int n);
-int		ft_atoi(char const *s);
-int		ft_strcmp(char const *s1, char const *s2);
-int		ft_strlen(char const *s);
-char	*ft_strrev(char *s);
-void	ft_swap(int *a, int *b);
-char	*ft_strcpy(char *d, char *s);
+char	*ft_strcpy(char *d, char *s)
+{
+	int i;
 
-#endif
+	i = 0;
+	while (s[i] != '\0')
+	{
+		d[i] = s[i];
+		i++;
+	}
+	d[i] = '\0';
+	return (d);
+}
