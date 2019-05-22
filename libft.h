@@ -6,7 +6,7 @@
 /*   By: cglanvil <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/05/21 13:15:45 by cglanvil          #+#    #+#             */
-/*   Updated: 2019/05/21 14:53:41 by cglanvil         ###   ########.fr       */
+/*   Updated: 2019/05/22 11:29:13 by cglanvil         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,5 +23,7 @@ void	ft_putnbr(int n);
 int		ft_atoi(char const *s);
 int		ft_strcmp(char const *s1, char const *s2);
 int		ft_strlen(char const *s);
+char	*ft_strrev(char *s);
+void	ft_swap(int *a, int *b);
 
 #endif
