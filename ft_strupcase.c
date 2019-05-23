@@ -6,9 +6,11 @@
 /*   By: cglanvil <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/05/23 11:28:19 by cglanvil          #+#    #+#             */
-/*   Updated: 2019/05/23 11:28:55 by cglanvil         ###   ########.fr       */
+/*   Updated: 2019/05/23 11:31:28 by cglanvil         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+#include "libft.h"
 
 char	*ft_strupcase(char *s)
 {
