@@ -6,7 +6,7 @@
 #    By: cglanvil <marvin@42.fr>                    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2019/02/28 12:47:14 by cglanvil          #+#    #+#              #
-#    Updated: 2019/05/23 11:49:15 by cglanvil         ###   ########.fr        #
+#    Updated: 2019/05/23 12:02:17 by cglanvil         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -25,7 +25,8 @@ FILES =	ft_putchar.c \
 		ft_strstr.c \
 		ft_strncmp.c \
 		ft_strupcase.c \
-		ft_strlowcase.c
+		ft_strlowcase.c \
+		ft_strcapitalize.c
 
 all:
 	gcc -c -Wall -Wextra -Werror $(FILES)
