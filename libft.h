@@ -6,7 +6,7 @@
 /*   By: cglanvil <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/05/21 13:15:45 by cglanvil          #+#    #+#             */
-/*   Updated: 2019/05/23 11:30:00 by cglanvil         ###   ########.fr       */
+/*   Updated: 2019/05/23 11:49:12 by cglanvil         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -29,6 +29,6 @@ char	*ft_strncpy(char *d, char *s, unsigned int n);
 char	*ft_strstr(char *s, char *to_find);
 int		ft_strncmp(char const *s1, char const *s2, size_t n);
 char	*ft_strupcase(char *s);
-
+char	*ft_strlowcase(char *s);
 
 #endif
