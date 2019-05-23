@@ -6,7 +6,7 @@
 #    By: cglanvil <marvin@42.fr>                    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2019/02/28 12:47:14 by cglanvil          #+#    #+#              #
-#    Updated: 2019/05/23 11:24:30 by cglanvil         ###   ########.fr        #
+#    Updated: 2019/05/23 11:30:03 by cglanvil         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -23,7 +23,9 @@ FILES =	ft_putchar.c \
 		ft_strcpy.c \
 		ft_strncpy.c \
 		ft_strstr.c \
-		ft_strncmp.c
+		ft_strncmp.c \
+		ft_strupcase.c \
+
 all:
 	gcc -c -Wall -Wextra -Werror $(FILES)
 	ar -rc $(NAME) *.o
