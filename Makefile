@@ -6,16 +6,17 @@
 #    By: cglanvil <marvin@42.fr>                    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2019/02/28 12:47:14 by cglanvil          #+#    #+#              #
-#    Updated: 2019/05/27 10:30:45 by cglanvil         ###   ########.fr        #
+#    Updated: 2019/05/27 10:51:57 by cglanvil         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
 NAME = libft.a
 
-FILES =	ft_putchar.c \
-		ft_putstr.c	\
+FILES =	ft_atoi.c \
+		ft_putchar.c \
 		ft_putnbr.c \
-		ft_atoi.c \
+		ft_putstr.c	\
+		ft_range.c \
 		ft_strcmp.c \
 		ft_strlen.c \
 		ft_strrev.c \
@@ -27,8 +28,7 @@ FILES =	ft_putchar.c \
 		ft_strupcase.c \
 		ft_strlowcase.c \
 		ft_strcapitalize.c \
-		ft_strdup.c \
-		ft_range.c
+		ft_strdup.c
 
 all:
 	gcc -c -Wall -Wextra -Werror $(FILES)
