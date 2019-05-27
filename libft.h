@@ -6,7 +6,7 @@
 /*   By: cglanvil <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/05/21 13:15:45 by cglanvil          #+#    #+#             */
-/*   Updated: 2019/05/23 12:02:15 by cglanvil         ###   ########.fr       */
+/*   Updated: 2019/05/27 10:23:48 by cglanvil         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -31,5 +31,6 @@ int		ft_strncmp(char const *s1, char const *s2, size_t n);
 char	*ft_strupcase(char *s);
 char	*ft_strlowcase(char *s);
 char	*ft_strcapitalize(char *s);
+char	*ft_strdup(char const *s1);
 
 #endif
