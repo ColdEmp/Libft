@@ -6,7 +6,7 @@
 #    By: cglanvil <marvin@42.fr>                    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2019/02/28 12:47:14 by cglanvil          #+#    #+#              #
-#    Updated: 2019/05/28 16:37:58 by cglanvil         ###   ########.fr        #
+#    Updated: 2019/05/28 16:40:42 by cglanvil         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -38,7 +38,8 @@ FILES =	ft_atoi.c \
 		ft_isalnum.c \
 		ft_isascii.c \
 		ft_isprint.c \
-		ft_toupper.c
+		ft_toupper.c \
+		ft_tolower.c
 all:
 	gcc -c -Wall -Wextra -Werror $(FILES)
 	ar -rc $(NAME) *.o
