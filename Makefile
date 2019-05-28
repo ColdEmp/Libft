@@ -6,7 +6,7 @@
 #    By: cglanvil <marvin@42.fr>                    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2019/02/28 12:47:14 by cglanvil          #+#    #+#              #
-#    Updated: 2019/05/28 13:28:21 by cglanvil         ###   ########.fr        #
+#    Updated: 2019/05/28 15:12:16 by cglanvil         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -30,7 +30,10 @@ FILES =	ft_atoi.c \
 		ft_strcapitalize.c \
 		ft_strdup.c \
 		ft_itoa.c \
-		ft_strnstr.c
+		ft_strnstr.c \
+		ft_isupper.c \
+		ft_islower.c \
+		ft_isalpha.c
 
 all:
 	gcc -c -Wall -Wextra -Werror $(FILES)
