@@ -6,7 +6,7 @@
 /*   By: cglanvil <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/05/21 13:15:45 by cglanvil          #+#    #+#             */
-/*   Updated: 2019/05/27 10:51:55 by cglanvil         ###   ########.fr       */
+/*   Updated: 2019/05/28 12:43:20 by cglanvil         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,13 +25,14 @@ int		ft_strcmp(char const *s1, char const *s2);
 int		ft_strlen(char const *s);
 char	*ft_strrev(char *s);
 void	ft_swap(int *a, int *b);
-char	*ft_strcpy(char *d, char *s);
-char	*ft_strncpy(char *d, char *s, unsigned int n);
+char	*ft_strcpy(char *dst, char const *src);
+char	*ft_strncpy(char *dst, char const *src, size_t n);
 char	*ft_strstr(char *s, char *to_find);
 int		ft_strncmp(char const *s1, char const *s2, size_t n);
 char	*ft_strupcase(char *s);
 char	*ft_strlowcase(char *s);
 char	*ft_strcapitalize(char *s);
 char	*ft_strdup(char const *s1);
+char	*ft_itoa(int n);
 
 #endif

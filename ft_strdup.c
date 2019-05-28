@@ -6,7 +6,7 @@
 /*   By: cglanvil <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/05/27 10:20:00 by cglanvil          #+#    #+#             */
-/*   Updated: 2019/05/27 10:22:50 by cglanvil         ###   ########.fr       */
+/*   Updated: 2019/05/28 12:07:59 by cglanvil         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,7 +19,8 @@ char	*ft_strdup(char const *s1)
 	char	*s2;
 
 	len = ft_strlen(s1);
-	s2 = (char*)malloc(sizeof(*s2) * (len + 1));
+	if(!(s2 = (char *)malloc(sizeof(*s2) * (len + 1))))
+		return (NULL);
 	i = 0;
 	while (i < (len))
 	{
