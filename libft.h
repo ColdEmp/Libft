@@ -6,7 +6,7 @@
 /*   By: cglanvil <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/05/21 13:15:45 by cglanvil          #+#    #+#             */
-/*   Updated: 2019/05/28 15:12:04 by cglanvil         ###   ########.fr       */
+/*   Updated: 2019/05/28 15:20:29 by cglanvil         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -38,5 +38,7 @@ char	*ft_strnstr(char const *haystack, char *needle, size_t len);
 int		ft_isupper(int c);
 int		ft_islower(int c);
 int		ft_isalpha(int c);
+int		ft_isdigit(int c);
+int		ft_isalnum(int c);
 
 #endif
