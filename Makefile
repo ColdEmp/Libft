@@ -6,7 +6,7 @@
 #    By: cglanvil <marvin@42.fr>                    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2019/02/28 12:47:14 by cglanvil          #+#    #+#              #
-#    Updated: 2019/05/29 11:50:33 by cglanvil         ###   ########.fr        #
+#    Updated: 2019/05/29 11:58:04 by cglanvil         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -43,7 +43,8 @@ FILES =	ft_atoi.c \
 		ft_memalloc.c \
 		ft_memdel.c \
 		ft_strnew.c \
-		ft_strdel.c
+		ft_strdel.c \
+		ft_strclr.c
 all:
 	gcc -c -Wall -Wextra -Werror $(FILES)
 	ar -rc $(NAME) *.o
