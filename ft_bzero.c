@@ -6,13 +6,19 @@
 /*   By: cglanvil <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/05/29 10:40:15 by cglanvil          #+#    #+#             */
-/*   Updated: 2019/05/29 10:40:53 by cglanvil         ###   ########.fr       */
+/*   Updated: 2019/05/30 14:25:24 by cglanvil         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void	bzero(void *s, size_t n)
+void	ft_bzero(void *s, size_t n)
 {
-
+	size_t	i;
+	char	*str;
+	
+	i = 0;
+	str = s;
+	while (i < n)
+		str[i++] = 0;
 }
