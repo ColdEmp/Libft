@@ -6,7 +6,7 @@
 /*   By: cglanvil <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/05/21 13:15:45 by cglanvil          #+#    #+#             */
-/*   Updated: 2019/05/30 12:42:59 by cglanvil         ###   ########.fr       */
+/*   Updated: 2019/05/30 12:56:44 by cglanvil         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -50,5 +50,6 @@ char	*ft_strnew(size_t size);
 void	ft_strdel(char **as);
 void	ft_strclr(char *s);
 char	*ft_strcat(char *restrict s1, const char *restrict s2);
+char	*ft_strncat(char *restrict s1, const char *restrict s2, size_t n);
 
 #endif
