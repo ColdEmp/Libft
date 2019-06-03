@@ -6,7 +6,7 @@
 /*   By: cglanvil <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/05/21 13:15:45 by cglanvil          #+#    #+#             */
-/*   Updated: 2019/06/03 13:14:31 by cglanvil         ###   ########.fr       */
+/*   Updated: 2019/06/03 13:57:03 by cglanvil         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -55,4 +55,5 @@ size_t	ft_strlcat(char * restrict dst, const char * restrict src, size_t dstsize
 void	ft_bzero(void *s, size_t n);
 char	*ft_strchr(const char *s, int c);
 char	*ft_strrchr(const char *s, int c);
+void	*ft_memcpy(void *restrict dst, const void *restrict src, size_t n);
 #endif
