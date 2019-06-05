@@ -6,7 +6,7 @@
 /*   By: cglanvil <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/06/03 14:37:05 by cglanvil          #+#    #+#             */
-/*   Updated: 2019/06/05 13:55:02 by cglanvil         ###   ########.fr       */
+/*   Updated: 2019/06/05 15:07:00 by cglanvil         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,7 +18,7 @@ void	*ft_memmove(void *dst, const void *src, size_t len)
 	char	*dest;
 	size_t	i;
 
-	if(dst == NULL && src == NULL)
+	if (dst == NULL && src == NULL)
 		return (NULL);
 	i = -1;
 	sorc = (char*)src;

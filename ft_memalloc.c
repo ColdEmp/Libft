@@ -6,7 +6,7 @@
 /*   By: cglanvil <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/05/29 10:53:21 by cglanvil          #+#    #+#             */
-/*   Updated: 2019/05/29 11:15:46 by cglanvil         ###   ########.fr       */
+/*   Updated: 2019/06/05 15:10:25 by cglanvil         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,9 +14,9 @@
 
 void	*ft_memalloc(size_t size)
 {
-	void	*mem;
-	size_t	i;
-	unsigned char *ptr;
+	void			*mem;
+	size_t			i;
+	unsigned char	*ptr;
 
 	i = 0;
 	if (!(mem = (void *)malloc(sizeof(void) * (size))))

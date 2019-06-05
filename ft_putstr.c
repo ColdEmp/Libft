@@ -6,7 +6,7 @@
 /*   By: cglanvil <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/05/21 13:48:14 by cglanvil          #+#    #+#             */
-/*   Updated: 2019/06/05 14:23:53 by cglanvil         ###   ########.fr       */
+/*   Updated: 2019/06/05 15:06:40 by cglanvil         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,7 +17,7 @@ void	ft_putstr(char const *s)
 	int i;
 
 	if (!s)
-		return;
+		return ;
 	i = 0;
 	while (s[i] != '\0')
 	{

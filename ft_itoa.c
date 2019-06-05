@@ -6,7 +6,7 @@
 /*   By: cglanvil <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/05/27 11:18:53 by cglanvil          #+#    #+#             */
-/*   Updated: 2019/05/28 12:06:14 by cglanvil         ###   ########.fr       */
+/*   Updated: 2019/06/05 14:59:20 by cglanvil         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,10 +14,10 @@
 
 char	*ft_itoa(int n)
 {
-	int len;
-	long nbr;
-	long nbrtemp;
-	char *str;
+	int		len;
+	long	nbr;
+	long	nbrtemp;
+	char	*str;
 
 	len = 0;
 	nbr = n;
