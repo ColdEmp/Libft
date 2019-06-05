@@ -6,7 +6,7 @@
 #    By: cglanvil <marvin@42.fr>                    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2019/02/28 12:47:14 by cglanvil          #+#    #+#              #
-#    Updated: 2019/06/05 15:45:09 by cglanvil         ###   ########.fr        #
+#    Updated: 2019/06/05 16:01:29 by cglanvil         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -60,7 +60,9 @@ FILES =	ft_atoi.c \
 		ft_putendl.c \
 		ft_putchar_fd.c \
 		ft_putstr_fd.c \
-		ft_putendl_fd.c
+		ft_putendl_fd.c \
+		ft_putnbr_fd.c \
+		ft_striter.c
 all:
 	gcc -c -Wall -Wextra -Werror $(FILES)
 	ar -rc $(NAME) *.o
