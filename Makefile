@@ -6,7 +6,7 @@
 #    By: cglanvil <marvin@42.fr>                    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2019/02/28 12:47:14 by cglanvil          #+#    #+#              #
-#    Updated: 2019/06/06 12:21:39 by cglanvil         ###   ########.fr        #
+#    Updated: 2019/06/06 13:20:57 by cglanvil         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -68,7 +68,8 @@ FILES =	ft_atoi.c \
 		ft_strmapi.c \
 		ft_strequ.c \
 		ft_strnequ.c \
-		ft_strsub.c
+		ft_strsub.c \
+		ft_strjoin.c
 all:
 	gcc -c -Wall -Wextra -Werror $(FILES)
 	ar -rc $(NAME) *.o
