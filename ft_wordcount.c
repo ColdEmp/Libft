@@ -1,26 +1,31 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   main.c                                             :+:      :+:    :+:   */
+/*   ft_wordcount.c                                     :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: cglanvil <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2019/05/22 11:38:37 by cglanvil          #+#    #+#             */
-/*   Updated: 2019/06/07 16:50:21 by cglanvil         ###   ########.fr       */
+/*   Created: 2019/06/07 16:36:30 by cglanvil          #+#    #+#             */
+/*   Updated: 2019/06/07 16:49:09 by cglanvil         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-#include <stdio.h>
 
-int	main(void)
+int	ft_wordcount(char const *s, char c)
 {
-	char	*s;
-	char	c;
-	int		test;
+	int	words;
+	int	i;
 
-	s = "I'm*asdfsdf*t******es*t*";
-	c = '*';
-	test = ft_wordcount(s, c);
-	printf("%d", test);
+	i = 1;
+	words = 0;
+	if (s[0] !=c)
+		words++;
+	while (s[i])
+	{
+		if (s[i] != c && s[i-1] == c)
+			words++;
+		i++;
+	}
+	return (words);
 }

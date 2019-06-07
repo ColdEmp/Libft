@@ -6,7 +6,7 @@
 /*   By: cglanvil <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/05/21 13:15:45 by cglanvil          #+#    #+#             */
-/*   Updated: 2019/06/06 16:24:28 by cglanvil         ###   ########.fr       */
+/*   Updated: 2019/06/07 16:48:47 by cglanvil         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -77,4 +77,6 @@ char	*ft_strjoin(char const *s1, char const *s2);
 char	*ft_strtrim(char const *s);
 int		ft_iswhitespace(int c);
 int		ft_nbrlen(int n);
+char	**ft_strsplit(char const *s, char c);
+int		ft_wordcount(char const *s, char c);
 #endif
