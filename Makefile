@@ -6,7 +6,7 @@
 #    By: cglanvil <marvin@42.fr>                    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2019/02/28 12:47:14 by cglanvil          #+#    #+#              #
-#    Updated: 2019/06/11 15:31:25 by cglanvil         ###   ########.fr        #
+#    Updated: 2019/06/11 16:03:44 by cglanvil         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -76,9 +76,10 @@ FILES =	ft_atoi.c \
 		ft_strsplit.c \
 		ft_wordcount.c \
 		ft_wordlen.c
-all:
+all: $(NAME)
+$(NAME):
 	gcc -c -Wall -Wextra -Werror $(FILES)
-	ar -rc $(NAME) *.o
+	ar rc $(NAME) *.o
 	ranlib $(NAME)
 clean:
 	rm -f *.o

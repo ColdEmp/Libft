@@ -6,7 +6,7 @@
 /*   By: cglanvil <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/06/07 16:20:55 by cglanvil          #+#    #+#             */
-/*   Updated: 2019/06/11 15:48:05 by cglanvil         ###   ########.fr       */
+/*   Updated: 2019/06/11 17:07:19 by cglanvil         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -33,11 +33,7 @@ char	**ft_strsplit(char const *s, char c)
 						* (ft_wordlen(&s[i], c) + 1))))
 			return (NULL);
 		while (s[i] != c && s[i])
-		{
-			str[word][j] = s[i];
-			i++;
-			j++;
-		}
+			str[word][j++] = s[i++];
 		str[word][j] = '\0';
 		word++;
 	}

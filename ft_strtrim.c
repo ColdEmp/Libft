@@ -6,7 +6,7 @@
 /*   By: cglanvil <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/06/06 13:58:22 by cglanvil          #+#    #+#             */
-/*   Updated: 2019/06/06 15:05:44 by cglanvil         ###   ########.fr       */
+/*   Updated: 2019/06/11 17:06:52 by cglanvil         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -32,7 +32,7 @@ char	*ft_strtrim(char const *s)
 		i--;
 	end = i;
 	if ((int)end < (int)start)
-		return ("");
+		return (ft_strdup(""));
 	if (!(str = ft_strnew(end - start + 1)))
 		return (NULL);
 	i = -1;
