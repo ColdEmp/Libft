@@ -6,7 +6,7 @@
 /*   By: cglanvil <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/06/07 16:36:30 by cglanvil          #+#    #+#             */
-/*   Updated: 2019/06/07 16:49:09 by cglanvil         ###   ########.fr       */
+/*   Updated: 2019/06/11 15:44:39 by cglanvil         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,11 +19,11 @@ int	ft_wordcount(char const *s, char c)
 
 	i = 1;
 	words = 0;
-	if (s[0] !=c)
+	if (s[0] != c)
 		words++;
 	while (s[i])
 	{
-		if (s[i] != c && s[i-1] == c)
+		if (s[i] != c && s[i - 1] == c)
 			words++;
 		i++;
 	}

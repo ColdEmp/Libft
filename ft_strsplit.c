@@ -6,7 +6,7 @@
 /*   By: cglanvil <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/06/07 16:20:55 by cglanvil          #+#    #+#             */
-/*   Updated: 2019/06/07 17:13:09 by cglanvil         ###   ########.fr       */
+/*   Updated: 2019/06/11 15:48:05 by cglanvil         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,27 +17,22 @@ char	**ft_strsplit(char const *s, char c)
 	int		word;
 	int		i;
 	int		j;
-	int		len;
 	char	**str;
 
-	if (!s)
-		return (NULL);
-	i = 0;
-	j = 0;
-	len = 0;
-	word = ft_wordcount(s, c);
-	if (!(str = (char **)malloc(sizeof(char*) * (word + 1))))
+	if (!s || !(str = (char **)malloc(sizeof(char*)
+					* (ft_wordcount(s, c) + 1))))
 		return (NULL);
 	word = 0;
-	while (s[i])
+	i = 0;
+	while (word < ft_wordcount(s, c))
 	{
+		j = 0;
 		while (s[i] == c)
 			i++;
-		while (s[i+len] != c)
-			len++;
-		if (!(str[word] = (char *)malloc(sizeof(char) * (len + 1))))
+		if (!(str[word] = (char *)malloc(sizeof(char)
+						* (ft_wordlen(&s[i], c) + 1))))
 			return (NULL);
-		while (s[i] != c)
+		while (s[i] != c && s[i])
 		{
 			str[word][j] = s[i];
 			i++;
@@ -45,9 +40,7 @@ char	**ft_strsplit(char const *s, char c)
 		}
 		str[word][j] = '\0';
 		word++;
-		j = 0;
-		len = 0;
 	}
-	str[word][j] = '\0';
+	str[word] = 0;
 	return (str);
 }

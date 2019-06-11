@@ -6,7 +6,7 @@
 #    By: cglanvil <marvin@42.fr>                    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2019/02/28 12:47:14 by cglanvil          #+#    #+#              #
-#    Updated: 2019/06/07 17:20:55 by cglanvil         ###   ########.fr        #
+#    Updated: 2019/06/11 15:31:25 by cglanvil         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -74,7 +74,8 @@ FILES =	ft_atoi.c \
 		ft_iswhitespace.c \
 		ft_nbrlen.c \
 		ft_strsplit.c \
-		ft_wordcount.c
+		ft_wordcount.c \
+		ft_wordlen.c
 all:
 	gcc -c -Wall -Wextra -Werror $(FILES)
 	ar -rc $(NAME) *.o
