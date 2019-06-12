@@ -6,7 +6,7 @@
 /*   By: cglanvil <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/06/07 16:20:55 by cglanvil          #+#    #+#             */
-/*   Updated: 2019/06/11 17:07:19 by cglanvil         ###   ########.fr       */
+/*   Updated: 2019/06/12 15:33:02 by cglanvil         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,7 +19,7 @@ char	**ft_strsplit(char const *s, char c)
 	int		j;
 	char	**str;
 
-	if (!s || !(str = (char **)malloc(sizeof(char*)
+	if (!s || !c || !(str = (char **)malloc(sizeof(char*)
 					* (ft_wordcount(s, c) + 1))))
 		return (NULL);
 	word = 0;
@@ -37,6 +37,6 @@ char	**ft_strsplit(char const *s, char c)
 		str[word][j] = '\0';
 		word++;
 	}
-	str[word] = 0;
+	str[word] = NULL;
 	return (str);
 }
