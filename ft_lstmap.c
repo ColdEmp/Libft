@@ -1,25 +1,29 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   strlen.c                                           :+:      :+:    :+:   */
+/*   ft_lstmap.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: cglanvil <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2019/05/21 14:39:10 by cglanvil          #+#    #+#             */
-/*   Updated: 2019/06/14 14:27:40 by cglanvil         ###   ########.fr       */
+/*   Created: 2019/06/14 13:59:36 by cglanvil          #+#    #+#             */
+/*   Updated: 2019/06/14 14:20:47 by cglanvil         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-size_t	ft_strlen(char const *s)
+t_list	*ft_lstmap(t_list *lst, t_list *(*f)(t_list *elem))
 {
-	size_t	i;
+	t_list	*temp;
 
-	i = 0;
-	while (s[i] != '\0')
+	temp = NULL;
+	if (lst)
 	{
-		i++;
+		temp = (t_list*)malloc(sizeof(t_list));
+		if (!temp)
+			return (NULL);
+		temp = f(lst);
+		temp->next = ft_lstmap(lst->next, f);
 	}
-	return (i);
+	return (temp);
 }

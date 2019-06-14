@@ -6,7 +6,7 @@
 #    By: cglanvil <marvin@42.fr>                    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2019/02/28 12:47:14 by cglanvil          #+#    #+#              #
-#    Updated: 2019/06/13 16:34:17 by cglanvil         ###   ########.fr        #
+#    Updated: 2019/06/14 14:18:48 by cglanvil         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -80,7 +80,8 @@ FILES =	ft_atoi.c \
 		ft_lstadd.c \
 		ft_lstiter.c \
 		ft_lstdelone.c \
-		ft_lstdel.c
+		ft_lstdel.c \
+		ft_lstmap.c
 all: $(NAME)
 $(NAME):
 	gcc -c -Wall -Wextra -Werror $(FILES)
