@@ -6,7 +6,7 @@
 /*   By: cglanvil <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/05/21 13:15:45 by cglanvil          #+#    #+#             */
-/*   Updated: 2019/06/24 13:32:22 by cglanvil         ###   ########.fr       */
+/*   Updated: 2019/06/25 09:56:59 by cglanvil         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -29,7 +29,7 @@ void				ft_putnbr(int n);
 void				ft_putstr(char const *s);
 int					*range(int min, int max);
 int					ft_strcmp(char const *s1, char const *s2);
-size_t				ft_strlen(char const *s);
+size_t				ft_strlen(const char *s);
 char				*ft_strrev(char *s);
 void				ft_swap(int *a, int *b);
 char				*ft_strcpy(char *dst, char const *src);
@@ -39,7 +39,7 @@ int					ft_strncmp(char const *s1, char const *s2, size_t n);
 char				*ft_strupcase(char *s);
 char				*ft_strlowcase(char *s);
 char				*ft_strcapitalize(char *s);
-char				*ft_strdup(char const *s1);
+char				*ft_strdup(const char *s1);
 char				*ft_itoa(int n);
 char				*ft_strnstr(char const *haystack, char const *needle,
 		size_t len);
