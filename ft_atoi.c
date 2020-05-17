@@ -32,8 +32,11 @@ int	ft_atoi(char const *s)
 	}
 	while (s[i] >= '0' && s[i] <= '9')
 	{
-		num = num * 10 + (s[i] - 48);
+		if (neg == -1)
+			num = num * 10 - (s[i] - 48);
+		else
+			num = num * 10 + (s[i] - 48);		
 		i++;
 	}
-	return (num * neg);
+	return (num);
 }
