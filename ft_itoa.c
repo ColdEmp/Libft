@@ -45,5 +45,5 @@ char	*ft_itoa(int n)
 		nbr /= 10;
 		len--;
 	}
-	return (str); // error on -2147483648
+	return (str);
 }
